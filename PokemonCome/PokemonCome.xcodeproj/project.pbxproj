@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96A72347CEAE6930CCDE8CBC /* libPods-PokemonCome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C54519B8FCDED5AF037B11 /* libPods-PokemonCome.a */; };
 		CC6C21611E88C10800BA7F66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C21601E88C10800BA7F66 /* AppDelegate.swift */; };
 		CC6C21631E88C10800BA7F66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C21621E88C10800BA7F66 /* ViewController.swift */; };
 		CC6C21661E88C10800BA7F66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6C21641E88C10800BA7F66 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2D5E96D07F9ECA31E6ED9B /* Pods-PokemonCome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonCome.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonCome/Pods-PokemonCome.release.xcconfig"; sourceTree = "<group>"; };
+		889814E4B48BE8BBC0F02D66 /* Pods-PokemonCome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonCome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonCome/Pods-PokemonCome.debug.xcconfig"; sourceTree = "<group>"; };
 		CC6C215D1E88C10800BA7F66 /* PokemonCome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonCome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6C21601E88C10800BA7F66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6C21621E88C10800BA7F66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		CC6C217C1E88C10800BA7F66 /* PokemonComeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonComeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6C21801E88C10800BA7F66 /* PokemonComeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonComeUITests.swift; sourceTree = "<group>"; };
 		CC6C21821E88C10800BA7F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C54519B8FCDED5AF037B11 /* libPods-PokemonCome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokemonCome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A72347CEAE6930CCDE8CBC /* libPods-PokemonCome.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		249499F48BBF0EF2346C7BC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				889814E4B48BE8BBC0F02D66 /* Pods-PokemonCome.debug.xcconfig */,
+				0A2D5E96D07F9ECA31E6ED9B /* Pods-PokemonCome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC6C21541E88C10800BA7F66 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				CC6C21741E88C10800BA7F66 /* PokemonComeTests */,
 				CC6C217F1E88C10800BA7F66 /* PokemonComeUITests */,
 				CC6C215E1E88C10800BA7F66 /* Products */,
+				249499F48BBF0EF2346C7BC0 /* Pods */,
+				D39C7742A5010BBF5B84C14E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = PokemonComeUITests;
 			sourceTree = "<group>";
 		};
+		D39C7742A5010BBF5B84C14E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6C54519B8FCDED5AF037B11 /* libPods-PokemonCome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC6C21851E88C10800BA7F66 /* Build configuration list for PBXNativeTarget "PokemonCome" */;
 			buildPhases = (
+				5F301FB392A999172CF56DF4 /* [CP] Check Pods Manifest.lock */,
 				CC6C21591E88C10800BA7F66 /* Sources */,
 				CC6C215A1E88C10800BA7F66 /* Frameworks */,
 				CC6C215B1E88C10800BA7F66 /* Resources */,
+				0A62547B75A4652E76614D71 /* [CP] Embed Pods Frameworks */,
+				65552E60F082205A921F823B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,7 @@
 				TargetAttributes = {
 					CC6C215C1E88C10800BA7F66 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 282NVW4D43;
 						ProvisioningStyle = Automatic;
 					};
 					CC6C21701E88C10800BA7F66 = {
@@ -253,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A62547B75A4652E76614D71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonCome/Pods-PokemonCome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F301FB392A999172CF56DF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65552E60F082205A921F823B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonCome/Pods-PokemonCome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC6C21591E88C10800BA7F66 /* Sources */ = {
@@ -408,11 +484,14 @@
 		};
 		CC6C21861E88C10800BA7F66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889814E4B48BE8BBC0F02D66 /* Pods-PokemonCome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 282NVW4D43;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = PokemonCome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.learningS.rwu.PokemonCome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PokemonCome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -420,11 +499,13 @@
 		};
 		CC6C21871E88C10800BA7F66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2D5E96D07F9ECA31E6ED9B /* Pods-PokemonCome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 282NVW4D43;
 				INFOPLIST_FILE = PokemonCome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.learningS.rwu.PokemonCome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PokemonCome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -503,6 +584,7 @@
 				CC6C21871E88C10800BA7F66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC6C21881E88C10800BA7F66 /* Build configuration list for PBXNativeTarget "PokemonComeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +593,7 @@
 				CC6C218A1E88C10800BA7F66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC6C218B1E88C10800BA7F66 /* Build configuration list for PBXNativeTarget "PokemonComeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +602,7 @@
 				CC6C218D1E88C10800BA7F66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
