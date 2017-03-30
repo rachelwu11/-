@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    NSString *userAgent = @"Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.23 (KHTML, like Gecko) Version/10.0 Mobile/14E5239e Safari/602";
+
+    // set default user agent
+    NSDictionary *dictionary = [[NSDictionary alloc]initWithObjectsAndKeys:userAgent,@"UserAgent", nil];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:(dictionary)];
+
     return YES;
 }
 
